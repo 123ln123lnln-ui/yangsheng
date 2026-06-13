@@ -1,3 +1,4 @@
+import { registerRootComponent } from 'expo';
 import React, { useEffect, useState } from 'react';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { Pressable, StatusBar, Text, View } from 'react-native';
@@ -18,7 +19,7 @@ const tabs: { key: Tab; icon: string; label: string }[] = [
   { key: 'settings', icon: '⚙️', label: '管理' },
 ];
 
-export default function App() {
+function App() {
   const [tab, setTab] = useState<Tab>('home');
   const [state, setState] = useState<AppState>(defaultState);
   useEffect(() => { loadState().then(setState); }, []);
@@ -53,3 +54,4 @@ export default function App() {
   </SafeAreaProvider>;
 }
 
+export default registerRootComponent(App);
