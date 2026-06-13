@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "家和养生",
+    "slug": "jiahe-yangsheng",
+    "icon": "./assets/icon.png",
+    "version": "0.5.0",
+    "orientation": "portrait",
+    "platforms": [
+      "android"
+    ],
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "scheme": "jiahe-yangsheng",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "应用需要访问相册以分析您的饮食照片。",
+          "cameraPermission": "应用需要使用相机以拍摄您的饮食照片。"
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.jiahe.yangsheng",
+      "versionCode": 5,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    }
+  }
+}
