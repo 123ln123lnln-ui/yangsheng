@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node_version: 20
+          node-version: 22
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -23,11 +23,11 @@ jobs:
           java-version: '17'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --ignore-engines
 
       - name: Build APK
         run: |
-          npx expo prebuild --platform android
+          npx expo prebuild --platform android --no-install
           cd android && ./gradlew assembleRelease
 
       - name: Upload APK
