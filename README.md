@@ -32,3 +32,12 @@ python system/scripts/weekly_wellness.py
 
 ## 免责声明
 `kb_drug_interactions.yaml`、`kb_food_safety.yaml` 为通用医学知识整理，**不构成医疗建议**；用药、剂量、禁忌请遵医嘱。
+
+## 许可
+| 范围 | 协议 |
+|---|---|
+| 代码（`app/`、`system/scripts/`） | **MIT** — 见 [LICENSE](LICENSE) |
+| 知识库（`system/knowledge/`） | **CC BY-NC 4.0**（署名 · 非商业） — 见 [LICENSE-KNOWLEDGE.md](LICENSE-KNOWLEDGE.md) |
+
+## 参考
+本仓库在编写过程中参考了公开医学资料与传统养生文献；所有知识库内容仅为整理与索引，**不构成医疗建议**。
