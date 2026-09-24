@@ -1,0 +1,25 @@
+# ── 隐私防线：真实家庭数据永不入库 ──
+system/state/family_profiles.yaml
+system/state/daily_log/
+system/state/rotation_log.yaml
+system/state/weather_today*.json
+system/reports/
+system/output/
+*.local.yaml
+*.local.json
+
+# ── 密钥 ──
+.env
+*.key
+*.pem
+secrets.*
+
+# ── 构建产物 ──
+node_modules/
+__pycache__/
+*.pyc
+.expo/
+dist/
+build/
+*.apk
+*.aab
